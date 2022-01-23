@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ToDoList</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <!-- sidebar -->
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-menu' ></i>
+      <span class="logo_name">ToDoList</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-time-five'></i>
+            <span class="link_name">Time</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#"></a></li>
+          <li><a id="time" href="#"></a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu todolist">
+          <li><a class="link_name" href="#"></a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-cloud' ></i>
+            <span class="link_name">Weather</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a id="weather" href="#"></a></li>
+          <li><a id="city_name" href="#"></a></li>
+        </ul>
+      </li>
+    </li>
+  </ul>
+  </div>
+  <!-- main content -->
+  <section class="home-section">
+    <div class="home-content">
+      <!-- login form -->
+      <div class="wrapper login__container hidden">
+        <h2>Log In</h2>
+        <form>
+          <div class="input-box input-user">
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Log In">
+          </div>
+          <div class="text">
+            <h3>Already have an account? <a href="#">Login now</a></h3>
+          </div>
+        </form>
+      </div>
+      <div class="greeting hidden"></div>
+      <!-- todoList form -->
+      <div class="wrapper hidden todoList__container">
+        <h2>To Do</h2>
+        <form id="todo-form">
+          <div class="input-box">
+            <input type="text" 
+                   placeholder="Write a To Do and Press Enter" 
+                   required
+            >
+          </div>
+        </form>
+        <ul id="todo-list">
+        </ul>
+        <div class="text quotes">
+          <h3 id="quote"></h3>
+          <h4 id="author"></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="js/weather.js"></script>
+  <script src="js/todo&quote.js"></script>
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/background.js"></script>
+</body>
+</html>
